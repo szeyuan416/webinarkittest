@@ -715,7 +715,7 @@ function webinar_registration_submit(event) {
 	let date = "2025-02-03"
 	let date_text = "2025-02-03"
 
-	let on_demand_session = date_select_value.on_demand_session;
+	let on_demand_session = true;
 
 	if (date === 'instant_watch') {
 		let now = new Date();
