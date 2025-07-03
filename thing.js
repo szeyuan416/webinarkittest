@@ -706,7 +706,7 @@ function webinar_registration_submit(event) {
 		return form_element.reportValidity();
 	}
 
-	let redirect_to = date_select_value.redirect_to;
+	let redirect_to = "";
 
 	let long_options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', timeZoneName: 'short' };
 
