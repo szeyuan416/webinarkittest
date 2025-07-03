@@ -706,17 +706,14 @@ function webinar_registration_submit(event) {
 		return form_element.reportValidity();
 	}
 
-	let date_select_value = JSON.parse(date_select.value);
-
-	let date = date_select_value.date;
-
 	let redirect_to = date_select_value.redirect_to;
 
 	let long_options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', timeZoneName: 'short' };
 
 	let date_format_type = registration_form.getAttribute('data-wk-date-format-type');
 
-	let date_text = new Date(date).toLocaleDateString(date_format_type, long_options);
+	let date = "2025-02-03"
+	let date_text = "2025-02-03"
 
 	let on_demand_session = date_select_value.on_demand_session;
 
